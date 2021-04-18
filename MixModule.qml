@@ -2,6 +2,8 @@ Module {
 
     label: 'Mix'
 
+    tags: ['fx','signal']
+
     InJack { label: 'ch1' }
     InJack { label: 'ch2' }
     InJack { label: 'ch3' }

@@ -1,6 +1,9 @@
 Module {
 
     label: 'Euclid Rhythm'
+
+    tags: ['sequencer', 'gate/trig']
+
     InJack { label: 'clock' }
     InJack { label: 'reset' }
     InJack { label: 'inSteps' }

@@ -1,6 +1,9 @@
 Module {
 
     label: 'Triangle VCO'
+
+    tags: ['vco']
+    
     InJack { label: 'inFreq' }
     InJack { label: 'inGain' }
     CV {

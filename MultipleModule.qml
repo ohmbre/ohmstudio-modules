@@ -1,6 +1,8 @@
 Module {
     label: "Multiple"
 
+    tags: ['signal','cv','logic']
+    
     InJack { label: "input" }
     
     OutJack {

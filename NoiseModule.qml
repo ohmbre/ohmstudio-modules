@@ -1,6 +1,9 @@
 Module {
 
-    label: 'Noise VCO'
+    label: 'Noise'
+
+    tags: ['vco','signal']
+    
     InJack { label: 'inGain' }
     CV {
         label: 'ctrlGain'

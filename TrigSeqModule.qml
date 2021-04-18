@@ -2,6 +2,8 @@ Module {
 
     label: 'Trig Sequencer'
 
+    tags: ['gate/trig','sequencer']
+    
     InJack {label: 'clock'}
     InJack {label: 'reset'}
 

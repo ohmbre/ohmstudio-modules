@@ -6,7 +6,7 @@ import Qt.labs.platform
 Module {
     id: audioSample
     label: 'Play Sample'
-    tags: ['sample']
+    tags: ['sampling','vco','signal']
 
     InJack { label: 'trig' }
     InJack { label: 'inFreq' }
@@ -59,7 +59,7 @@ Module {
         }
     }
 
-    exports: ({ x:'x', y:'y', cvs:'default', fileName: 'fileName'})
+    save: ['fileName']
 
     display: Item {
         anchors.fill: parent

@@ -3,7 +3,7 @@ import QtQuick
 Module {
 
     label: 'Toggle'
-    tags: ['trig/gate']
+    tags: ['gate/trig']
     BinaryCV { label: 'toggle' }
 
     OutJack {

@@ -1,5 +1,8 @@
 Module {
     label: 'PWM VCO'
+
+    tags: ['vco']
+
     InJack { label: 'inFreq' }
     InJack { label: 'inDuty' }
     InJack { label: 'inGain' }

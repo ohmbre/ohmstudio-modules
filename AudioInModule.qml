@@ -3,7 +3,7 @@ import QtQuick
 Module {
     id: audioIn
     label: 'Audio In'
-    tags: ['hw']
+    tags: ['device io','sampling']
 
 
     OutJack { label: 'ch1'; func: AUDIO.getInChannel(0); }

@@ -3,7 +3,7 @@ import QtQuick
 Module {
     id: audioOut
     label: 'Audio Out'
-    tags: ['hw']
+    tags: ['device io']
 
     InJack {
         label: 'ch1';

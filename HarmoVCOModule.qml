@@ -2,6 +2,8 @@ Module {
 
     label: 'Harmo VCO'
 
+    tags: ['vco']
+    
     InJack { label: 'trig' }
     InJack { label: 'inFreq' }
     InJack { label: 'inGain' }

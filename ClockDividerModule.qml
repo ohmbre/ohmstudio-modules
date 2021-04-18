@@ -2,6 +2,8 @@ Module {
 
     label: 'Clock Divider'
 
+    tags: ['clock', 'gate/trig', 'sequencer']
+    
     InJack {label: 'clock'}
     InJack {label: 'reset'}
     

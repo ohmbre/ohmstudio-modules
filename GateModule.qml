@@ -1,6 +1,8 @@
 Module {
 
     label: 'Gate'
+
+    tags: ['gate/trig', 'logic']
     
     InJack {label: 'trig'}
     

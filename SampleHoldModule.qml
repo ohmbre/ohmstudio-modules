@@ -1,6 +1,9 @@
 Module {
 
     label: 'Sample Hold'
+
+    tags: ['cv', 'sampling', 'logic']
+
     InJack {label: 'signal'}
     InJack {label: 'trig'}
     

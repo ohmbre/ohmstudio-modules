@@ -1,5 +1,7 @@
 Module {
     label: 'VCA'
+    tags: ['signal','fx','cv']
+
     InJack { label: 'inGain' }
     InJack { label: 'inShift' }
     InJack { label: 'input' }

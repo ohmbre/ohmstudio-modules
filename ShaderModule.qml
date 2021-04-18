@@ -4,7 +4,6 @@ import QtQuick
 Module {
     id: shaderMod    
     label: 'Shader'
-    
 
     InJack {
         label: 'input';
@@ -13,7 +12,7 @@ Module {
         }
     }
 
-    tags: ['interface']
+    tags: ['device io','gfx']
 
     property var vertex: "void main() {\n  gl_Position = ubuf.qt_Matrix * aVertex;\n  vTexCoord = aTexCoord;\n}"
     
@@ -68,7 +67,7 @@ Module {
         property alias shaderSink: shaderSink
     }
 
-    exports: ({ x:'x', y:'y', vertex: 'vertex', fragment: 'fragment'})
+    save: ['vertex', 'fragment'] 
 
 
 }

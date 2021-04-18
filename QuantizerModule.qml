@@ -1,6 +1,8 @@
 Module {
     label: 'Quantizer'
 
+    tags: ['cv']
+    
     InJack {label: 'input'}
 
     QuantCV {

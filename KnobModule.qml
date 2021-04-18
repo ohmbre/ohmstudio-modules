@@ -1,6 +1,8 @@
 Module {
     label: 'Knob'
 
+    tags: ['cv']
+    
     CV { label: 'volts' }
     OutJack {
         label: 'cv'

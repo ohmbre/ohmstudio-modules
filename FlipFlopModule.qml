@@ -1,5 +1,7 @@
 Module {
     label: 'Flip Flop'
+    tags: ['gate/trig','logic']
+
     InJack {label: 'trig'}
 
     OutJack {

@@ -3,6 +3,8 @@ import QtQuick
 Module {
     label: "Delay"
 
+    tags: ['cv', 'fx']
+    
     InJack { label: 'signal' }
     InJack { label: 'inDelay' }
 

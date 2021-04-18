@@ -2,6 +2,8 @@ Module {
 
     label: 'Random Walk'
 
+    tags: ['cv']
+
     InJack { label: 'inStep' }
     CV {
         label: 'ctrlStep'

@@ -2,6 +2,8 @@ Module {
 
     label: 'Slide'
 
+    tags: ['cv']
+    
     InJack {label: 'input'}
     InJack {label: 'inRise'}
     InJack {label: 'inFall'}

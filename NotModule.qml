@@ -1,6 +1,8 @@
 Module {
     label: 'Not'
 
+    tags: ['logic', 'gate/trig']
+    
     InJack {label: 'input'}
 
     OutJack {

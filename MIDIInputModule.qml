@@ -4,7 +4,9 @@ Module {
     id: midiin
     label: "MIDI In"
 
-    property var hw: new MIDIInFunc();
+    tags: ['device io']
+    
+    property var hw: testCreate ? {getVoct: ()=>{}, getVel: ()=>{}, getGate: ()=>{}, getCv: ()=>{}} : new MIDIInFunc();
  
     OutJack { label: "voct1"; func: midiin.hw.getVoct(0) }
     OutJack { label: "gate1"; func: midiin.hw.getGate(0) }
@@ -32,12 +34,14 @@ Module {
     property var keyChoices: keyList.slice()
 
     Component.onCompleted: {
-        hw.setChanFilter(chanChoices)
-        hw.setTypeFilter(msgChoices)
-        hw.setKeyFilter(keyChoices)
+	if (!testCreate) {
+            hw.setChanFilter(chanChoices)
+            hw.setTypeFilter(msgChoices)
+            hw.setKeyFilter(keyChoices)
+	}
     }
 
-    exports: ({ x:'x', y:'y', cvs: 'default', devChoice: 'devChoice', chanChoices: 'chanChoices', msgChoices: 'msgChoices', keyChoices: 'keyChoices'})
+    save: ['devChoice', 'chanChoices', 'msgChoices', 'keyChoices']
 
     display: Rectangle {
         anchors.fill: parent

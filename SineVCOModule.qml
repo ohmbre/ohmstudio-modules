@@ -3,6 +3,8 @@ import ohm 1.0
 Module {
     label: 'Sine VCO'
 
+    tags: ['vco']
+    
     InJack { label: 'inFreq' }
     InJack { label: 'inGain' }
     CV {

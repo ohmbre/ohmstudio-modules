@@ -1,6 +1,8 @@
 Module {
     label: 'Random Sequencer'
 
+    tags: ['cv', 'sequencer']
+    
     InJack {label: 'clock'}
 
     CV {

@@ -3,6 +3,8 @@ import QtQuick
 Module {
     label: 'CV Sequencer'
 
+    tags: ['cv', 'sequencer']
+    
     InJack {label: 'clock'}
     InJack {label: 'reset'}
 
